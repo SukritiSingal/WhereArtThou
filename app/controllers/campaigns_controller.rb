@@ -7,6 +7,19 @@ class CampaignsController < ApplicationController
     @campaigns = Campaign.all
   end
 
+  def createListing
+    status = Campaign.createListing(campaign_params)
+    if status > 0
+       params = { :campaign_id => status }
+       redirect_to "/campaigns/show?#{params.to_query}"
+    else
+       @campaign = Campaign.new
+       @campaignStatus = status
+       render :new
+    end
+  end
+
+
   # GET /campaigns/1
   # GET /campaigns/1.json
   def show
@@ -60,6 +73,11 @@ class CampaignsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def getCampaigns
+    campaigns = Campaign.getCampaigns(listings_params[:city])
+    render :json => { status: 1, campaigns: campaigns }
+   end
 
   private
     # Use callbacks to share common setup or constraints between actions.

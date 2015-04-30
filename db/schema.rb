@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150429075151) do
     t.string   "name"
     t.string   "street"
     t.string   "city"
-    t.integer  "zipcode"
+    t.string  "zipcode"
     t.text     "description"
     t.text     "promotion"
     t.datetime "created_at",  null: false
