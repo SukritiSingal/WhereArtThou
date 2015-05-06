@@ -1,0 +1,176 @@
+<manifest alg="2" build="11" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1430425611912">
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="3851180228" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="236677741" mt="1430425053122" redirect="true"/>
+  </folder>
+  <folder name="css">
+    <file name="site_global.css" crc="422415861"/>
+    <file name="index.css" crc="524617877" ref="index"/>
+    <file name="campaigns.css" crc="4283685887" ref="campaigns"/>
+    <file name="contact.css" crc="3850156897" ref="contact"/>
+    <file name="sign-up.css" crc="3850156897" ref="sign-up"/>
+    <file name="login.css" crc="3850156897" ref="login"/>
+    <file name="about.css" crc="72417701" ref="about"/>
+    <file name="business.css" crc="3850156897" ref="business"/>
+    <file name="11th-and-mission.css" crc="4059085211" ref="11th-and-mission"/>
+    <file name="master_a-master.css" crc="166031732" ref="business:index:11th-and-mission:contact:campaigns:login:about:sign-up:how-it-works:submit-an-idea"/>
+    <file name="how-it-works.css" crc="4129300710" ref="how-it-works"/>
+    <file name="submit-an-idea.css" crc="3988887549" ref="submit-an-idea"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3880902115" ref="index:phone>index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="museutils.js" crc="521960461" ref="index:phone>index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="jquery.watch.js" crc="56779320" ref="index:phone>index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="museredirect.js" crc="4117159434" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="349594875" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="jquery.scrolleffects.js" crc="4038615763" ref="campaigns"/>
+    <file name="pie.js" crc="3827607177" ref="11th-and-mission:submit-an-idea"/>
+    <file name="webpro.js" crc="220831917" ref="11th-and-mission:submit-an-idea"/>
+    <file name="musewpslideshow.js" crc="224651946" ref="11th-and-mission"/>
+    <file name="jquery.museoverlay.js" crc="276313855" ref="11th-and-mission"/>
+    <file name="touchswipe.js" crc="325405309" ref="11th-and-mission"/>
+    <file name="form_check.php" crc="218543696" ref="submit-an-idea"/>
+    <file name="form_throttle.php" crc="3988545917" ref="submit-an-idea"/>
+    <file name="form_process.php" crc="4264751530" ref="submit-an-idea"/>
+    <file name="form-u1643.php" crc="3798682336" ref="submit-an-idea"/>
+  </folder>
+  <folder name="images">
+    <file name="restart.png" crc="378088771" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="weird foxes.png" crc="4066613555" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="blank.gif" crc="4208392903" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="brick.jpg" crc="4060949059" ref="campaigns:11th-and-mission:index"/>
+    <file name="google.jpg" crc="532156146" ref="campaigns:11th-and-mission:index"/>
+    <file name="icon_location_white.png" crc="14964068" ref="campaigns:11th-and-mission:index"/>
+    <file name="clock.png" crc="4181656395" ref="campaigns:11th-and-mission:index"/>
+    <file name="lightbulb.png" crc="375791624" ref="campaigns:11th-and-mission:index:how-it-works"/>
+    <file name="u650_states.png" crc="436530498" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u650_states-r.png" crc="42858750" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u650_states-a.png" crc="55443970" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u651_states.png" crc="4278673368" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u651_states-r.png" crc="74134820" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u651_states-a.png" crc="3780284930" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u652.png" crc="311588143" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u652-r.png" crc="3850190085" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u653.png" crc="4248497342" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u653-r.png" crc="4200859632" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u649_states.png" crc="3994937337" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u649_states-r.png" crc="4278219431" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u646_states.png" crc="3791796728" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u646_states-r.png" crc="4108553985" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u684-4.png" crc="156161663" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="facebook and twitter.png" crc="460865282" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="tumblr.png" crc="4111937542" ref="index:campaigns:about:business:contact:login:sign-up:11th-and-mission:how-it-works:submit-an-idea"/>
+    <file name="u827-4.png" crc="4182614205" ref="campaigns"/>
+    <file name="u856-4.png" crc="35402266" ref="campaigns"/>
+    <file name="u902-4.png" crc="24314228" ref="campaigns"/>
+    <file name="u746-4.png" crc="437764888" ref="campaigns"/>
+    <file name="u745-4.png" crc="4209211122" ref="campaigns"/>
+    <file name="a-red-bull-logo.jpg" crc="139695756" ref="campaigns:index"/>
+    <file name="u793-4.png" crc="4221252770" ref="campaigns"/>
+    <file name="u783-4.png" crc="97183856" ref="campaigns"/>
+    <file name="u792-4.png" crc="390074975" ref="campaigns"/>
+    <file name="u903-4.png" crc="318473683" ref="campaigns"/>
+    <file name="philzcoffee-vector-logo.jpg" crc="505314110" ref="campaigns"/>
+    <file name="u869-6.png" crc="4286051716" ref="campaigns"/>
+    <file name="u868-4.png" crc="452193571" ref="campaigns"/>
+    <file name="u904-4.png" crc="18817568" ref="campaigns"/>
+    <file name="jawbone.jpg" crc="3895375842" ref="campaigns"/>
+    <file name="u978-4.png" crc="3835832607" ref="campaigns"/>
+    <file name="u977-4.png" crc="100985143" ref="campaigns"/>
+    <file name="u736-4.png" crc="3870952020" ref="campaigns"/>
+    <file name="u737-4.png" crc="3969431473" ref="campaigns"/>
+    <file name="u742-4.png" crc="104941246" ref="campaigns"/>
+    <file name="u784-4.png" crc="526659723" ref="campaigns"/>
+    <file name="u789-4.png" crc="293808828" ref="campaigns"/>
+    <file name="u859-4.png" crc="433858141" ref="campaigns"/>
+    <file name="u860-4.png" crc="29127069" ref="campaigns"/>
+    <file name="u865-4.png" crc="4270241197" ref="campaigns"/>
+    <file name="u968-4.png" crc="458039445" ref="campaigns"/>
+    <file name="u969-4.png" crc="29127069" ref="campaigns"/>
+    <file name="u974-4.png" crc="123524559" ref="campaigns"/>
+    <file name="u729-4.png" crc="41689791" ref="about"/>
+    <file name="u730-4.png" crc="241252159" ref="about"/>
+    <file name="u732-5.png" crc="3888913237" ref="about"/>
+    <file name="u1034-4.png" crc="20642393" ref="11th-and-mission"/>
+    <file name="u1038-4.png" crc="70280709" ref="11th-and-mission"/>
+    <file name="u1285-4.png" crc="4095195231" ref="index"/>
+    <file name="u1284-4.png" crc="22841070" ref="index"/>
+    <file name="u1302-4.png" crc="335186440" ref="index"/>
+    <file name="u1292-4.png" crc="284533923" ref="index"/>
+    <file name="u1301-4.png" crc="4234847711" ref="index"/>
+    <file name="u1110-14.png" crc="4210636442" ref="index"/>
+    <file name="u1308_states.png" crc="66486743" ref="index"/>
+    <file name="u1308_states-r.png" crc="66486743" ref="index"/>
+    <file name="u1275-4.png" crc="529959301" ref="index"/>
+    <file name="u1276-4.png" crc="4126272458" ref="index"/>
+    <file name="u1281-4.png" crc="415175511" ref="index"/>
+    <file name="u1293-4.png" crc="127427979" ref="index"/>
+    <file name="u1298-4.png" crc="3867794019" ref="index"/>
+    <file name="u1070-4.png" crc="358094879" ref="11th-and-mission"/>
+    <file name="u1073-4.png" crc="4219020966" ref="11th-and-mission"/>
+    <file name="u1074-4.png" crc="437764888" ref="11th-and-mission"/>
+    <file name="u1108-4.png" crc="190612665" ref="11th-and-mission"/>
+    <file name="bear-u1370-fr.jpg" crc="99821394" ref="11th-and-mission"/>
+    <file name="sketch.jpg" crc="4097815906" ref="11th-and-mission"/>
+    <file name="sketch2.jpg" crc="3881695531" ref="11th-and-mission"/>
+    <file name="sketch3.jpg" crc="41055483" ref="11th-and-mission"/>
+    <file name="sketch4.jpg" crc="3827898791" ref="11th-and-mission"/>
+    <file name="sketch5.jpg" crc="400353233" ref="11th-and-mission"/>
+    <file name="sketch6.jpg" crc="212846392" ref="11th-and-mission"/>
+    <file name="sketch7.jpg" crc="4260973313" ref="11th-and-mission"/>
+    <file name="sketch8.jpg" crc="476945573" ref="11th-and-mission"/>
+    <file name="skethc10.jpg" crc="514839351" ref="11th-and-mission"/>
+    <file name="sktech9.jpg" crc="4020049344" ref="11th-and-mission"/>
+    <file name="bear.jpg" crc="3766996918" ref="11th-and-mission"/>
+    <file name="u1470-6.png" crc="4275191940" ref="11th-and-mission"/>
+    <file name="u1479.png" crc="4127128606" ref="11th-and-mission"/>
+    <file name="u1479-r.png" crc="4127128606" ref="11th-and-mission"/>
+    <file name="thumbs up.png" crc="3313043" ref="11th-and-mission"/>
+    <file name="u1474-4.png" crc="4001085062" ref="11th-and-mission"/>
+    <file name="u1235-4.png" crc="4213846638" ref="how-it-works"/>
+    <file name="restart-logo.png" crc="324212928" ref="how-it-works"/>
+    <file name="u1248-4.png" crc="3783650747" ref="how-it-works"/>
+    <file name="hip arrow.png" crc="4056964384" ref="how-it-works"/>
+    <file name="building.png" crc="489332928" ref="how-it-works"/>
+    <file name="people.png" crc="30483856" ref="how-it-works"/>
+    <file name="u1255-4.png" crc="3883506456" ref="how-it-works"/>
+    <file name="paintbrushh.png" crc="256464639" ref="how-it-works"/>
+    <file name="u1258-4.png" crc="359193328" ref="how-it-works"/>
+    <file name="u1249-4.png" crc="4152161730" ref="how-it-works"/>
+    <file name="u1252-4.png" crc="63401188" ref="how-it-works"/>
+    <file name="u1067_states.png" crc="471880522" ref="11th-and-mission"/>
+    <file name="u1067_states-r.png" crc="378763832" ref="11th-and-mission"/>
+    <file name="u1514.png" crc="4240457735" ref="11th-and-mission"/>
+    <file name="u1514-r.png" crc="4240457735" ref="11th-and-mission"/>
+    <file name="u1641-4.png" crc="4003866990" ref="submit-an-idea"/>
+    <file name="u1648.png" crc="3928661373" ref="submit-an-idea"/>
+    <file name="u1648-ferr.png" crc="145518573" ref="submit-an-idea"/>
+    <file name="u1657.png" crc="352703565" ref="submit-an-idea"/>
+    <file name="u1657-ferr.png" crc="144543613" ref="submit-an-idea"/>
+    <file name="u1649.png" crc="4129487148" ref="submit-an-idea"/>
+    <file name="u1649-fs.png" crc="263596104" ref="submit-an-idea"/>
+    <file name="u1655.png" crc="3833903796" ref="submit-an-idea"/>
+    <file name="u1655-fse.png" crc="35840988" ref="submit-an-idea"/>
+    <file name="u1650.png" crc="3810625781" ref="submit-an-idea"/>
+    <file name="u1650-fss.png" crc="365350637" ref="submit-an-idea"/>
+    <file name="u1644-17.png" crc="256752333" ref="submit-an-idea"/>
+    <file name="u1644-17-r.png" crc="4136651742" ref="submit-an-idea"/>
+    <file name="u1644-17-m.png" crc="4136651742" ref="submit-an-idea"/>
+    <file name="u1644-17-fs.png" crc="4136651742" ref="submit-an-idea"/>
+    <file name="u1654.png" crc="344920826" ref="submit-an-idea"/>
+    <file name="u1654-ferr.png" crc="3840778041" ref="submit-an-idea"/>
+    <file name="u1712-4.png" crc="502443859" ref="submit-an-idea"/>
+  </folder>
+  <file name="index.html" crc="4033166406" mt="1430425053433" redirect="true"/>
+  <file name="campaigns.html" crc="49929761" mt="1430425053127" redirect="true"/>
+  <file name="about.html" crc="431700180" mt="1430425053127" redirect="true"/>
+  <file name="business.html" crc="511480157" mt="1430425053127" redirect="true"/>
+  <file name="contact.html" crc="479958681" mt="1430425053432" redirect="true"/>
+  <file name="login.html" crc="510311184" mt="1430425053127" redirect="true"/>
+  <file name="sign-up.html" crc="457652434" mt="1430425053433" redirect="true"/>
+  <file name="11th-and-mission.html" crc="109525753" mt="1430425579237" redirect="true"/>
+  <file name="how-it-works.html" crc="368833603" mt="1430425053127" redirect="true"/>
+  <file name="submit-an-idea.html" crc="3779985028" mt="1430425557691" redirect="true"/>
+</manifest>

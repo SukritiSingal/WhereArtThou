@@ -1,0 +1,124 @@
+#u645
+{
+	background-color: #000000;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	position: fixed;
+}
+
+#u647
+{
+	background-color: transparent;
+	position: fixed;
+}
+
+#u647_clip
+{
+	overflow: hidden;
+}
+
+#u650_states
+{
+	vertical-align: top;
+	background: url("../images/u650_states.png") no-repeat 0px 0px;
+}
+
+#u650:hover #u650_states
+{
+	background: url("../images/u650_states-r.png") no-repeat 0px 0px;
+}
+
+#u650.MuseLinkActive #u650_states
+{
+	background: url("../images/u650_states-a.png") no-repeat 0px 0px;
+}
+
+#u651_states
+{
+	vertical-align: top;
+	background: url("../images/u651_states.png") no-repeat 0px 0px;
+}
+
+#u651:hover #u651_states
+{
+	background: url("../images/u651_states-r.png") no-repeat 0px 0px;
+}
+
+#u651.MuseLinkActive #u651_states
+{
+	background: url("../images/u651_states-a.png") no-repeat 0px 0px;
+}
+
+#u652
+{
+	vertical-align: top;
+	position: fixed;
+	background: url("../images/u652.png") no-repeat 0px 0px;
+}
+
+#u652:hover
+{
+	background: url("../images/u652-r.png") no-repeat 0px 0px;
+}
+
+#u653
+{
+	vertical-align: top;
+	position: fixed;
+	background: url("../images/u653.png") no-repeat 0px 0px;
+}
+
+#u653:hover
+{
+	background: url("../images/u653-r.png") no-repeat 0px 0px;
+}
+
+#u649_states
+{
+	vertical-align: top;
+	background: url("../images/u649_states.png") no-repeat 0px 0px;
+}
+
+#u649:hover #u649_states
+{
+	background: url("../images/u649_states-r.png") no-repeat 0px 0px;
+}
+
+#u650,#u651,#u649,#u646
+{
+	position: fixed;
+}
+
+#u646_states
+{
+	vertical-align: top;
+	background: url("../images/u646_states.png") no-repeat 0px 0px;
+}
+
+#u646:hover #u646_states
+{
+	background: url("../images/u646_states-r.png") no-repeat 0px 0px;
+}
+
+#u683
+{
+	background-color: #000000;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+}
+
+#u684-4
+{
+	display: block;
+	vertical-align: top;
+	position: relative;
+}
+
+#u686,#u692
+{
+	background-color: transparent;
+	position: relative;
+}
+

@@ -1,0 +1,187 @@
+.version.business /* version checker */
+{
+	color: #0000E5;
+	background-color: #7CBB61;
+}
+
+.html
+{
+	background: #FFFFFF url("../images/weird%20foxes.png") no-repeat left top scroll;
+	background-size: cover;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 480px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pu645
+{
+	width: 0.01px;
+	padding-bottom: 51px;
+	margin-right: -10000px;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+#u645
+{
+	z-index: 2;
+	height: 51px;
+	top: 0px;
+}
+
+#u645-bw
+{
+	z-index: 2;
+}
+
+#u647
+{
+	z-index: 6;
+	width: 158px;
+	top: 0px;
+	left: 0px;
+}
+
+#u647_clip
+{
+	width: 158px;
+	height: 51px;
+}
+
+#u647_img
+{
+	margin: -1px 3px 1px -1px;
+}
+
+#u650
+{
+	z-index: 12;
+	top: 0px;
+	left: 170px;
+}
+
+#u650_states
+{
+	height: 51px;
+	width: 100px;
+}
+
+#u651
+{
+	z-index: 16;
+	top: 0px;
+	left: 270px;
+}
+
+#u651_states
+{
+	height: 51px;
+	width: 121px;
+}
+
+#u652
+{
+	z-index: 20;
+	height: 51px;
+	width: 123px;
+	top: 0px;
+	left: 391px;
+}
+
+#u653
+{
+	z-index: 23;
+	height: 51px;
+	width: 109px;
+	top: 0px;
+	left: 514px;
+}
+
+#u649
+{
+	z-index: 9;
+	top: 17px;
+	right: 99px;
+}
+
+#u649_states
+{
+	height: 19px;
+	width: 66px;
+}
+
+#u646
+{
+	z-index: 4;
+	top: 17px;
+	right: 25px;
+}
+
+#u646_states
+{
+	height: 19px;
+	width: 61px;
+}
+
+#pu683
+{
+	width: 0.01px;
+	margin: 480px -10000px -54px -100px;
+}
+
+#u683,#u683-bw
+{
+	z-index: 25;
+	height: 54px;
+}
+
+#u684-4
+{
+	z-index: 26;
+	margin-right: -10000px;
+	margin-top: 17px;
+	left: 136px;
+}
+
+#u686
+{
+	z-index: 30;
+	width: 64px;
+	margin-right: -10000px;
+	margin-top: 11px;
+	left: 949px;
+}
+
+#u692
+{
+	z-index: 32;
+	width: 33px;
+	margin-right: -10000px;
+	margin-top: 11px;
+	left: 1015px;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 50px;
+	padding-bottom: 53px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+	margin-bottom: -479px;
+}
+

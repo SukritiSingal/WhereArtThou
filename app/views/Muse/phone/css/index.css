@@ -1,0 +1,111 @@
+.version.index /* version checker */
+{
+	color: #0000E5;
+	background-color: #8C58C4;
+}
+
+@-ms-viewport
+{
+	width: 380px;
+}
+
+@-webkit-viewport
+{
+	width: 380px;
+}
+
+@-o-viewport
+{
+	width: 380px;
+}
+
+@-moz-viewport
+{
+	width: 380px;
+}
+
+@viewport
+{
+	width: 380px;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 380px;
+	min-height: 71px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 499px;
+}
+
+#u120
+{
+	z-index: 2;
+	height: 71px;
+	background-color: #000000;
+	opacity: 0.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+}
+
+#u120-bw
+{
+	z-index: 2;
+	height: 71px;
+}
+
+#u150
+{
+	z-index: 3;
+	width: 29px;
+	height: 5px;
+	background-color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 23px;
+	left: 333px;
+}
+
+#u151
+{
+	z-index: 4;
+	width: 29px;
+	height: 5px;
+	background-color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 33px;
+	left: 333px;
+}
+
+#u152
+{
+	z-index: 5;
+	width: 29px;
+	height: 5px;
+	background-color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 43px;
+	left: 333px;
+}
+
+body
+{
+	position: relative;
+	min-width: 380px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+
