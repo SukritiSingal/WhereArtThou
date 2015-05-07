@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  resources :ideas
   resources :campaigns
+  resources :ideas
+
+  #put '/upvote', to: 'ideas#upvote', as: 'upvote'
+  get '/upvote', to: 'ideas#upvote', as: 'upvote'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -55,4 +58,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root 'campaigns#index'
 end

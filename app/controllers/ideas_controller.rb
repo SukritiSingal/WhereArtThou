@@ -7,6 +7,19 @@ class IdeasController < ApplicationController
     @ideas = Idea.all
   end
 
+  def createListing
+    status = Idea.createListing(idea_params)
+    if status > 0
+       params = { :idea_id => status }
+       redirect_to "/ideas/show?#{params.to_query}"
+    else
+       @idea = Idea.new
+       @ideaStatus = status
+       render :new
+    end
+  end
+
+
   # GET /ideas/1
   # GET /ideas/1.json
   def show
@@ -60,6 +73,36 @@ class IdeasController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+=begin
+  def getIdeas
+    ideas = Idea.getIdeas(listings_params[:city])
+    render :json => { status: 1, campaigns: campaigns }
+  end
+=end
+
+
+  #implement upvoting
+  def upvote
+    #get current number of votes
+    #increment by 1
+    #save
+
+    respond_to do |format|
+      puts "THIS IS THE PARAMS: ", params[:id]
+      if @idea = Idea.find(params[:id])
+        @idea.increment :upvotes
+        #upvote_counter = @idea.upvotes + 1
+        @idea.save
+        format.html { redirect_to @idea, notice: 'Idea was successfully upvoted.' }
+        format.json { render :show, status: :ok, location: @idea }
+      else
+        format.html { render :edit }
+        format.json { render json: @idea.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
