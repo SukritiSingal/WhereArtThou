@@ -13,8 +13,8 @@ class Idea < ActiveRecord::Base
   belongs_to :campaign
 
   def self.getCampaignIdeas(campaignid)
-    	ideas = Idea.where("campaign_id = '#{campaignid}'")
-    	return ideas
+      ideas = Idea.where("campaign_id = '#{campaignid}'")
+      return ideas
   end
 
   def self.upvote_an_idea
