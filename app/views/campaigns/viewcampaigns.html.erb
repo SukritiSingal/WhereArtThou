@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="<%= asset_path('all_campaigns.css') %>" id="pagesheet"/>
+	</head>
+	<body>	
+		<div id="allStuff">
+			<% @campaigns.each do |campaign| %>
+				<div id="eachCampaign">
+					<div id="campaignPhoto">
+						<div id="sponsor"> <img src="<%= asset_path('google.jpg') %>"/> </div>
+					<div id="promotionStuff"> <%= campaign.promotion %> </div>
+		      		<div> <img src="<%= asset_path('brick.jpg') %>" width="337"/> </div>
+					</div>
+					<div id="campaignBlackBox">
+						<div style="padding: 20px; ">
+							<img  src="<%= asset_path('icon_location_white.png') %>" alt="" width="32" height="32" />
+							<div class="textWhite" id="campaignName" style="display: inline">
+							    <%= campaign.name %>
+							</div>
+							<div style="padding-top: 10px">
+								<img src="<%= asset_path('lightbulb.png') %>" alt="" width="25" height="25" />
+						        <div class="textWhite" id="infoCSS">
+						        		<%= campaign.numideas %> IDEAS
+						        </div>
+						    </div>
+					        <div style="padding-top: 10px">
+						         <img src="<%= asset_path('clock.png') %>" alt="" width="21" height="21" />
+						        <div class="textWhite" id="infoCSS">
+						         		<%= campaign.time  %> DAYS LEFT
+						        </div>
+						    </div>
+						</div>
+					    <div style="position: absolute; ">
+						    <a href="<%= campaign_path(:id => campaign.id)  %>">
+						    	<img alt="VIEW CAMPAIGN" src="<%= asset_path('u1276-4.png') %>"/>
+						    </a>
+						</div>
+				  	</div>
+				</div>
+			<% end %>
+		</div>
+	</body>
+<html>

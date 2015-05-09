@@ -1,29 +1,33 @@
 class CampaignsController < ApplicationController
   before_action :set_campaign, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /campaigns
   # GET /campaigns.json
   def index
     @campaigns = Campaign.all
   end
 
-  def createListing
-    status = Campaign.createListing(campaign_params)
-    if status > 0
-       params = { :campaign_id => status }
-       redirect_to "/campaigns/show?#{params.to_query}"
-    else
-       @campaign = Campaign.new
-       @campaignStatus = status
-       render :new
-    end
-  end
-
-
   # GET /campaigns/1
   # GET /campaigns/1.json
   def show
+    require 'date'
+    diff = @campaign.lastdate - Date.today
+    @time = diff.to_i
+    @ideas = ::Idea.getCampaignIdeas(@campaign.id)
+    @numideas = @ideas.count
   end
+
+  def viewcampaigns
+    @campaigns = Campaign.all
+    @campaigns.each do |campaign|
+      diff = campaign.lastdate - Date.today
+      time = diff.to_i
+      ideas = ::Idea.getCampaignIdeas(campaign.id)
+      numideas = ideas.count
+      campaign.numideas = numideas
+      campaign.time = time
+    end
+  end 
 
   # GET /campaigns/new
   def new
@@ -32,6 +36,12 @@ class CampaignsController < ApplicationController
 
   # GET /campaigns/1/edit
   def edit
+  end
+
+  def root 
+  end
+
+  def works
   end
 
   # POST /campaigns
@@ -64,6 +74,15 @@ class CampaignsController < ApplicationController
     end
   end
 
+  def about
+  end 
+
+  def business
+  end 
+
+  def howit
+  end
+
   # DELETE /campaigns/1
   # DELETE /campaigns/1.json
   def destroy
@@ -87,6 +106,6 @@ class CampaignsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def campaign_params
-      params.require(:campaign).permit(:name, :street, :city, :zipcode, :description, :promotion)
+      params.require(:campaign).permit(:name, :street, :city, :zipcode, :description, :promotion, :lastdate)
     end
 end

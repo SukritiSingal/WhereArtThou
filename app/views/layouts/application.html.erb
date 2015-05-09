@@ -5,10 +5,33 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="<%= asset_path('header.css') %>" id="pagesheet"/>
 </head>
-<body>
+	<body style="padding: 0px; margin: 0px; background-image: url('http://dimartblog.files.wordpress.com/2014/01/san_beastman_nz-3.jpg')">
+		<div id="topStuff">
+			<div id="restartImg">
+				<a href="<%= root_path()  %>">
+					<img src="<%= asset_path('restart.png') %>" height="40" width="140"/>
+				</a>
+			</div>
+			<div id="allCampaign">
+				<a href="<%= viewcampaigns_path()  %>">
+					<img src="<%= asset_path('u651_states-r.png') %>" height="40" width="120"/>
+				</a>
+			</div>
+			<div id="createCampaignCSS">
+				<a href="<%= new_campaign_path()  %>">
+				<div id="createTab"> CREATE A CAMPAIGN </div>
+			</a>
+			</div>
+		</div>
 
-<%= yield %>
+		<%= yield %>
+		<div id="bottomTab">
+			<div id="register">
+				<img width="138" height="20" src="<%= asset_path('u684-4.png') %>"/>
+			</div>
+		</div>
 
-</body>
+	</body>
 </html>

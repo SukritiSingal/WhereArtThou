@@ -1,0 +1,60 @@
+#campaignBlackBox {
+	background-color: black;
+	opacity: 0.8;
+	height: 150px;
+	width: 336px;
+}
+
+#campaignName {
+	padding-left: 10px;
+  	height: 30px;
+  	width: 270px;
+	display: inline;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 22px;
+	position: absolute;
+}
+
+.textWhite {
+	color: white;
+	position:	relative;
+}
+
+#infoCSS {
+	font-weight: bold;
+	padding-left: 10px;
+	width: 250px;
+	height: 23px;
+	position: absolute;
+	padding-top: 3px;
+	display: inline
+}
+
+#sponsor {
+	padding-top: 10px;
+    padding-left: 10px;
+	z-index: 2; 
+	position: absolute;
+} 
+
+#promotionStuff {
+	margin-top: 130px;
+  	margin-left: 120px;
+  	z-index: 1; 
+	position: absolute;
+	background-color: #63D13E;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	width:	200px;
+	height: 40px;
+	color: white;
+	padding: 5px;
+} 
+
+
+#eachCampaign {
+	margin: 20px;
+	display: inline-block;
+	height: 380px;
+}

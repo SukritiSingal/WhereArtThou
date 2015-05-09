@@ -12,30 +12,37 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :street %><br>
+    <%= f.label :street %>
     <%= f.text_field :street %>
   </div>
   <div class="field">
-    <%= f.label :city %><br>
+    <%= f.label :city %>
     <%= f.text_field :city %>
   </div>
   <div class="field">
-    <%= f.label :zipcode %><br>
+    <%= f.label :zipcode %>
     <%= f.number_field :zipcode %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :promotion %><br>
+    <%= f.label :promotion %>
     <%= f.text_area :promotion %>
   </div>
-  <div class="actions">
+  <div class="field">
+    <%= f.label :lastdate %>
+    <%= f.date_field :lastdate %>
+  </div>
+  <div class="actions" style="background-color: bisque;
+  padding: 5px; width: 150px;
+  text-align: center;
+  border-radius: 25px;">
     <%= f.submit %>
   </div>
 <% end %>

@@ -1,34 +1,59 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @campaign.name %>
-</p>
-
-<p>
-  <strong>Street:</strong>
-  <%= @campaign.street %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @campaign.city %>
-</p>
-
-<p>
-  <strong>Zipcode:</strong>
-  <%= @campaign.zipcode %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @campaign.description %>
-</p>
-
-<p>
-  <strong>Promotion:</strong>
-  <%= @campaign.promotion %>
-</p>
-
-<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
-<%= link_to 'Back', campaigns_path %>
+<html>
+	<head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script type="text/javascript" src="<%= asset_path('spinners.min.js') %>"></script> 
+		<script type="text/javascript" src="<%= asset_path('lightview.js') %>"></script>
+		<link rel="stylesheet" type="text/css" href="<%= asset_path('lightview.css') %>" />
+  		<link rel="stylesheet" type="text/css" href="<%= asset_path('campaign_show.css') %>" id="pagesheet"/>
+	</head>
+	<body id="backgroundBody">
+		<div id="bodyStuff">
+			<div id="photoText">
+				<div id="sponsorimage"> <img src="<%= asset_path('google.jpg') %>"/> </div>
+				<div id="promotion"> <%= @campaign.promotion %> </div>
+	      		<div> <img src="<%= asset_path('brick.jpg') %>"/> </div>
+			</div>
+	        <div id="infoText">
+	        	<div id="paddingCSS">
+	        		<img  src="<%= asset_path('icon_location_white.png') %>" alt="" width="32" height="32" />
+			       	<div class="whiteText" id="titleCSS" style="display: inline">
+			          <%= @campaign.name %>
+			       	</div>
+		       		<div class="whiteText" id="descriptionCSS">
+		       			<%= @campaign.description %>
+		       		</div>
+		         	<img src="<%= asset_path('lightbulb.png') %>" alt="" width="25" height="25" />
+			        <div class="whiteText" id="timeCSS" style="display: inline">
+			        		<%= @numideas %> IDEAS
+			        </div>
+			        <div style="padding-top: 10px">
+				         <img src="<%= asset_path('clock.png') %>" alt="" width="21" height="21" />
+				        <div class="whiteText" id="timeCSS" style="display: inline">
+				         		<%= @time %> DAYS LEFT
+				        </div>
+				    </div>
+				</div>
+				<div style="position: absolute; ">
+				    <a href="<%= new_idea_path(:campaign_id => @campaign.id)  %>">
+				    	<img id="u1067_states" alt="SUBMIT AN IDEA" src="<%= asset_path('blank.gif') %>"/>
+				    </a>
+				</div>
+			</div>
+		</div>
+		<div id="ideaText">
+			<div id="currentIdeaCss">
+				<img alt="CURRENT IDEAS" src="<%= asset_path('u1108-4.png') %>"/>
+			</div>
+			<div id="imageIdeaBox">
+				<% @ideas.each do |idea| %>
+					<a href='<%= idea_path(:id => idea.id)  %>' 
+				     class='lightview' 
+				     data-lightview-group='example' >
+				    <img src='<%= idea.image_url %>'  height="145" width="145" alt=''/>
+				  </a>
+       			<% end %>
+			</div>
+		</div>
+	</body>
+</html>

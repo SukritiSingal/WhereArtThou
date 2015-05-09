@@ -20,10 +20,14 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :upvotes %><br>
-    <%= f.number_field :upvotes %>
+    <%= f.label :image_url %><br>
+    <%= f.text_area :image_url %>
   </div>
-  <div class="actions">
+  <%= f.hidden_field :campaign_id, :value => @campaignid %>
+  <div class="actions" style="background-color: bisque;
+  padding: 5px; width: 150px;
+  text-align: center;
+  border-radius: 25px;">
     <%= f.submit %>
   </div>
 <% end %>

@@ -11,6 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require museutils
 //= require jquery_ujs
 //= require turbolinks
+// = webpro
+//= require colorbox-rails
 //= require_tree .

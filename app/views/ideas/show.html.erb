@@ -1,19 +1,27 @@
-<p id="notice"><%= notice %></p>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="<%= asset_path('ideas_show.css') %>" />
+  </head>
+  <body>
+    <div id="ideaOuter" >
+      <img src="<%= @idea.image_url %>" alt="IMAGE" width="480px" height="360px" />
+      <div id="ideaName">  <%= @idea.name %> </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @idea.name %>
-</p>
+      <div id="ideaDescription">
+        <%= @idea.description %>
+      </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @idea.description %>
-</p>
-
-<p>
-  <strong>Upvotes:</strong>
-  <%= @idea.upvotes %>
-</p>
-
-<%= link_to 'Edit', edit_idea_path(@idea) %> |
-<%= link_to 'Back', ideas_path %>
+      <div id="voteName">
+        <%= @idea.upvotes %> VOTES
+      </div>
+      <div style="text-align: center;">
+        <div id="upvotecss">
+          <a href="<%= upvote_path(:id => @idea.id)  %>">
+            <div style="color: white; display: inline; margin-right: 14px;"> UPVOTE </div>
+            <img src="<%= asset_path('thumbs up.png') %>" alt="UPVOTE" src=""/>
+          </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

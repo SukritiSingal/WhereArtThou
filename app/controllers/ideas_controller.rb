@@ -15,6 +15,7 @@ class IdeasController < ApplicationController
   # GET /ideas/new
   def new
     @idea = Idea.new
+    @campaignid = params[:campaign_id]
   end
 
   # GET /ideas/1/edit
@@ -24,11 +25,11 @@ class IdeasController < ApplicationController
   # POST /ideas
   # POST /ideas.json
   def create
-    @idea = Idea.new(idea_params)
+    @idea = Idea.new(idea_params.merge(:upvotes => 0))
 
     respond_to do |format|
       if @idea.save
-        format.html { redirect_to @idea, notice: 'Idea was successfully created.' }
+        format.html { redirect_to campaign_path(idea_params[:campaign_id]) }
         format.json { render :show, status: :created, location: @idea }
       else
         format.html { render :new }
@@ -61,6 +62,36 @@ class IdeasController < ApplicationController
     end
   end
 
+=begin
+  def getIdeas
+    ideas = Idea.getIdeas(listings_params[:city])
+    render :json => { status: 1, campaigns: campaigns }
+  end
+=end
+
+
+  #implement upvoting
+  def upvote
+    #get current number of votes
+    #increment by 1
+    #save
+
+    respond_to do |format|
+      puts "THIS IS THE PARAMS: ", params[:id]
+      if @idea = Idea.find(params[:id])
+        @idea.increment :upvotes
+        #upvote_counter = @idea.upvotes + 1
+        @idea.save
+        format.html { redirect_to @idea, notice: 'Idea was successfully upvoted.' }
+        format.json { render :show, status: :ok, location: @idea }
+      else
+        format.html { render :edit }
+        format.json { render json: @idea.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_idea
@@ -69,6 +100,6 @@ class IdeasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def idea_params
-      params.require(:idea).permit(:name, :description, :upvotes)
+      params.require(:idea).permit(:name, :description, :upvotes, :image_url, :campaign_id)
     end
 end
