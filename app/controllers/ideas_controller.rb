@@ -7,19 +7,6 @@ class IdeasController < ApplicationController
     @ideas = Idea.all
   end
 
-  def createListing
-    status = Idea.createListing(idea_params)
-    if status > 0
-       params = { :idea_id => status }
-       redirect_to "/ideas/show?#{params.to_query}"
-    else
-       @idea = Idea.new
-       @ideaStatus = status
-       render :new
-    end
-  end
-
-
   # GET /ideas/1
   # GET /ideas/1.json
   def show
